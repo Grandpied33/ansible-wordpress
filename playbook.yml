@@ -1,8 +1,8 @@
-- hosts:
-    - 20.188.36.242
-
+- hosts: vm1devops
+  sudo: True
   roles:
     - server
+    - ftp
     - php
     - mysql
     - wordpress

@@ -3,6 +3,8 @@
 
 - name: Create mysql user
   mysql_user: 
-    name={{ wp_mysql_user }} 
+    name={{ wp_mysql_user }}
     password={{ wp_mysql_password }} 
     priv=*.*:ALL
+    login_user={{ wp_mysql_user }}
+    login_password={{ wp_mysql_password }} 
